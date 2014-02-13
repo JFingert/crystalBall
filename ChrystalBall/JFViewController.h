@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JFViewController : UIViewController
+@class JFCrystalBall;
 
+@interface JFViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) JFCrystalBall *crystalBall;
+
+- (void) makePrediction;
 @end
